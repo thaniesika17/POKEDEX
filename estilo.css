@@ -1,0 +1,30 @@
+
+
+.pokemon{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+.col-sm-4{
+    width: 100%;
+}
+
+.card{
+    width: 100%;
+    margin: 30px;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.form-control{
+    padding: 10px;
+    margin: 10px;
+}
+
+.navbarNav{
+    display: flex;
+    flex-direction: column;
+}

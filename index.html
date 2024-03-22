@@ -4,24 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Rick & Morty</title>
-    
+    <link rel="stylesheet" href="estilo.css">
+    <title>Pokedex</title>
 </head>
 <body>
+    <div id="contenedor" class="contenedor">
 
+        <div id="navegacion">
+          <nav class="navbar bg-body-tertiary">
+            <img src="./Image/logoPokemon.jpg" alt="Logo" width="100px" height="50px" class="d-inline-block align-text-top">
+            <form class="container-fluid justify-content-start">
+              <button class="btn btn-sm btn-outline-success me-2" type="button">Todos</button>
+              <button class="btn btn-sm btn-outline-secondary" id="normal" type="button">Normal</button>
+              <button class="btn btn-sm btn-outline-secondary" id="fighting" type="button">Fighting</button>
+              <button class="btn btn-sm btn-outline-secondary" id="fliying" type="button">Fliying</button>
+              <button class="btn btn-sm btn-outline-secondary" id="poison" type="button">Poison</button>
+              <button class="btn btn-sm btn-outline-secondary" id="ground" type="button">Bug</button>
+              <button class="btn btn-sm btn-outline-secondary" id="ghost" type="button">Ghost</button>
+              <button class="btn btn-sm btn-outline-secondary" id="steel" type="button">Steel</button>
+              <button class="btn btn-sm btn-outline-secondary" id="fire" type="button">Fire</button>
+              <button class="btn btn-sm btn-outline-secondary" id="water" type="button">Water</button>
+              <button class="btn btn-sm btn-outline-secondary" id="grass" type="button">Grass</button>
+              <button class="btn btn-sm btn-outline-secondary" id="electric" type="button">Electric</button>
+              <button class="btn btn-sm btn-outline-secondary" id="psychic" type="button">Psychic</button>
+              <button class="btn btn-sm btn-outline-secondary" id="ice" type="button">Ice</button>
+              <button class="btn btn-sm btn-outline-secondary" id="dragon" type="button">Dragon</button>
+              <button class="btn btn-sm btn-outline-secondary" id="dark" type="button">Dark</button>
+              <button class="btn btn-sm btn-outline-secondary" id="fairy" type="button">Fairy</button>
+            </form>
+          </nav>
 
-    <div id="padre"> 
-          <h2 class="mt-5 mb-5">Rick & Morty</h2>
-          <div class="contenedor" id="personajes">
-
-            
-            
+          <div class="input-group mb-3">
+            <form action="" class="input-group mb3" id="busqueda">
+              <input type="text" class="form-control" id="inputBusqueda" placeholder="Pokemon a buscar" >
+              <button class="btn btn-outline-success"  id="boton">Buscar</button>
+            </form>
           </div>
+
+        </div>
+
+        <div class="row" id="todos">
+            <div id="listaPokemon" class="pokemon-todos">
+                
+            </div>
+        </div>
+
 
     </div>
     
-    
-    <script src="script.js "></script>
+    <script src="script.js"></script>
 </body>
 </html>
